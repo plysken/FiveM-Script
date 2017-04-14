@@ -34,7 +34,9 @@ CREATE TABLE IF NOT EXISTS `users` (
   `identifier` varchar(255) CHARACTER SET utf8mb4 NOT NULL DEFAULT '',
   `group` varchar(50) NOT NULL DEFAULT '0',
   `permission_level` int(11) NOT NULL DEFAULT '0',
-  `money` double NOT NULL DEFAULT '0'
+  `money` double NOT NULL DEFAULT '0',
+  `weapons` varchar(5000) CHARACTER SET utf8 NOT NULL,
+  `vehicles` varchar(10000) CHARACTER SET utf8 NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- Data exporteren was gedeselecteerd
